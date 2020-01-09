@@ -1,0 +1,444 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	}
+ul,li,ol{
+	list-style:none;
+	}
+a{
+	text-decoration:none;
+	}
+.clears{
+	clear:both;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow: hidden;
+	}
+body{
+	font-family:Arial,Verdana,"微软雅黑","宋体";
+	}
+/*css*/
+.nav{
+	height: 120px;
+	min-width: 1920px;
+	background: #2f2f2f;
+}
+.nav .nav_content{
+	width: 1200px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo{
+	float: left;
+	width: 198px;
+	height: 120px;
+	overflow: hidden;
+}
+.benti_ul{
+	float: right;
+}
+.benti_ul li{
+	float: left;
+}
+.benti_ul li:nth-child(7){
+	margin-left: 100px;
+}
+.benti_ul li a{
+	color: white;
+	font-size: 22px;
+	line-height: 120px;
+	display: inline-block;
+	height: 120px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.benti_ul li a:hover{
+	color: #F56164;
+	background:#F18486;
+	transform: rotateZ(360deg);
+	transition:all 0.2s;
+}
+.baiyun{
+	width: 1920px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background: url(../images/piaodong2.jpg) repeat-x;
+	color: white;
+	animation: Cloud 20s linear infinite;
+	
+}
+@keyframes Cloud{
+	0%{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: -1920px 0;
+	}
+}
+.baiyun img{
+	opacity: 0.6;
+}
+.baiyun object{
+	position:absolute;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.baiyun p{
+	position: absolute;
+	reght:600px;
+}
+.meet{
+	width: 1920px;
+	height: 577px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.meet object{
+	position:absolute;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.meet p{
+	position: absolute;
+	reght:600px;
+}
+.meet .wz1{
+	
+	height: 50px;
+	position: absolute;
+	left: 990px;
+	top:208px;
+}
+.meet .wz1 span{
+	width: 34px;
+	height: 34px;
+	line-height: 50px;
+	font-size: 30px;
+	margin-left: 25px;
+	font-weight: 600;
+	border: 1px solid #000;
+}
+.meet .wz2{
+	position: absolute;
+	left: 1010px;
+	top:260px;
+	font-size: 12px;
+	margin-top: 20px;
+}
+.wzk{
+	width: 1920px;
+	height: 210px;
+	background: #f4f4f4;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wzk .wz3{
+	font-size: 22px;
+	text-align: center;
+	padding-top: 60px;
+	font-weight: 600;
+}
+.wzk .wz4{
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+}
+.wzk .wz5{
+	font-size: 12px;
+	text-align: center;
+}
+.tus1{
+	width: 1920px;
+	height: 382px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tus1 ul li {
+	width: 240px;
+	height: 191px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.tus1 ul li p{
+	width: 240px;
+	height: 191px;
+	background: #000000;
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: inline-block;
+	overflow: hidden;
+	transition: all 0.2s;
+	transform-origin: 100px 100px;
+}
+.tus1 ul li p:hover {
+	opacity: 0;
+	
+	transform: rotateZ(90deg) rotateX(90deg);
+}
+
+
+
+
+.null{
+	width: 1920px;
+	height: 110px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #f4f4f4;
+}
+
+.wzk2{
+	width: 1920px;
+	height: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fbfbfb;
+}
+.wzk2 .wz6{
+	font-size: 22px;
+	text-align: center;
+	padding-top: 60px;
+}
+.wzk2 .wz7{
+	font-size: 12px;
+	text-align: center;
+	padding-top: 10px;
+}
+.touxiang{
+	width: 1200px;
+	height: 400px;
+	background: #fbfbfb;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+}
+.touxiang ul a{
+	float: left;
+}
+.touxiang ul li{
+	height: 200px;
+	position: relative;
+}
+.touxiang ul li p{
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	line-height: 45px;
+	width: 200px;
+	height: 45px;
+	opacity: 0.8;
+	background: #f36970;
+	display:inline-block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.touxiang ul a:hover p{
+	display: none;
+}
+.touxiang ul li span{
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	line-height: 45px;
+	width: 200px;
+	height:200px;
+	opacity: 0.9;
+	background: #f36970;
+	display:none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.touxiang ul a:hover span{
+	display:inline-block;
+}
+.touxiang li span img{
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	display: block;
+}
+.null1{
+	width: 1920px;
+	height: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fbfbfb;
+}
+
+.wenz{
+	margin-top: 40px;
+	width: 1920px;
+	height: 190px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wenz .wp1{
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing:15px;
+}
+.wenz .wp2{
+	text-align: center;
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.list{
+	width: 1200px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+}
+
+.list li{
+	width:240px;
+	height:480px;
+	float: left;
+	overflow: hidden;
+	position:relative;
+	
+} 
+.list  li a span{
+	width:240px;
+	height:480px;
+	display:block;  
+	overflow:hidden; 
+}
+
+.list .beijing{
+	width:240px;
+	height:480px;
+	text-align: center;
+	background: rgba(255,102,102,0.8);
+	filter:alpha(opacity=80);
+	position: absolute;
+	top:0;
+	left: 0;
+	opacity:0;
+	transition: all 0.8s;
+}
+.list .tubiao{
+	margin-top: 160px;
+}
+.list li p{
+	margin-top: 32px;
+	color: #fff;
+	font-size: 20px;
+}
+.list  li a:hover .beijing{
+	transition: all 0.8s;
+	opacity:1;
+} 
+
+.list  li a:hover .tu img{
+	width:260px;
+	height: 500px;
+}
+
+
+
+.dibu{
+	width: 1920px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #2f2f2f;
+	overflow: hidden;
+}
+.dibu .more{
+	
+	height: 260px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.dibu .more ul:nth-child(1){
+	margin-left: 520px;
+}
+.dibu .more .sh{
+	margin-left: 30px;
+	margin-bottom: 20px;
+	color: red;
+}
+.dibu .more .sh h3{
+	letter-spacing:4px;
+	color: red;
+	margin-left: 20px;
+}
+.dibu .more p{
+	color: red;
+	font-style: italic;
+	margin-left: 20px;
+}
+.dibu  .more ul{
+	float: left;
+	margin-left: 30px;
+}
+.dibu .more ul span{
+	color: #777474;
+	font-size: 16px;
+	margin-bottom: 20px;
+	line-height: 35px;
+}
+.dibu .more ul li:hover span{
+	color: #F16C6E;
+}
+.dibu .lianxi li{
+	margin-bottom: 12px;
+	margin-left: 30px;
+	
+}
+.dibu .lianxi li a{
+	color: #777474;
+	font-size: 12px;
+}
+.lianxi li:hover a{
+	color:#ED7678;
+}
+.dibu .foot p{
+	font-size: 12px;
+	text-align: center;
+	color:#777474;
+}
+.backtop{
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	z-index: 9999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

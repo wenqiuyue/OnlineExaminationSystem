@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>首页</title>
+<script type="text/javascript" src="js/jquery02.js"></script>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+<style>
+	/* Styles for Bugs Bunny#bed1e4 */
+*{margin:0;padding:0;list-style:none;}
+body{background: #bed1e4;font:normal 12px/22px 宋体;width:100%;}
+img{border:0;}
+a{text-decoration:none;color:#333;}
+a:hover{color:#1974A1;}
+/* fullSlide */
+.fullSlide{width:100%;position:relative;height:410px;background:#000;}
+.fullSlide .bd{margin:0 auto;position:relative;z-index:0;overflow:hidden;}
+.fullSlide .bd ul{width:100% !important;}
+.fullSlide .bd li{width:100% !important;height:410px;overflow:hidden;text-align:center;}
+.fullSlide .bd li a{display:block;height:410px;}
+.fullSlide .hd{width:100%;position:absolute;z-index:1;bottom:0;left:0;height:30px;line-height:30px;}
+.fullSlide .hd ul{text-align:center;}
+.fullSlide .hd ul li{cursor:pointer;display:inline-block;*display:inline;zoom:1;width:42px;height:11px;margin:1px;overflow:hidden;background:#000;filter:alpha(opacity=50);opacity:0.5;line-height:999px;}
+.fullSlide .hd ul .on{background:#f00;}
+.fullSlide .prev,.fullSlide .next{display:block;position:absolute;z-index:1;top:50%;margin-top:-30px;left:15%;z-index:1;width:40px;height:60px;background:url(images/slider-arrow.png) -126px -137px #000 no-repeat;cursor:pointer;filter:alpha(opacity=50);opacity:0.5;display:none;}
+.fullSlide .next{left:auto;right:15%;background-position:-6px -137px;}
+.top_logo { 
+    width: 1100px; 
+  	margin:0 auto;
+    display: block;
+    clear: both;
+}
+
+.lflogo {
+    width: 568px;
+    height: 116px;
+    float: left;
+}
+.rflogo {
+	margin-top:50px;
+    width: 296px;
+    height: 47px;
+    float: right;
+}
+
+</style>
+
+</head>
+<body>
+<div class="top_logo"  >
+	<div class="lflogo">
+	<a href="#"><img src="img/top_logo.png" alt="" /></a>
+	</div>
+	<div class="rflogo">
+	<a href="#"><img src="img/top_kh.png" alt=""  /></a>
+	</div>
+</div>
+<div class="fullSlide" style="position:absolute;left:0px;top:0px;z-index:-1;">
+	<div class="bd">
+		<ul>
+			<li  style="background-image:url(img/slide1.jpg)  ; background-repeat: no-repeat;background-size: 100% 100%;-moz-background-size: 100% 100%;"><a href="#"></a></li>
+			<li  style="background-image:url(img/slide2.jpg)  ; background-repeat: no-repeat;background-size: 100% 100%;-moz-background-size: 100% 100%;"><a href="#"></a></li>
+			<li  style="background-image:url(img/slide3.jpg)  ; background-repeat: no-repeat;background-size: 100% 100%;-moz-background-size: 100% 100%;"><a href="#"></a></li>
+			
+		</ul>
+	</div>
+	<div class="hd"><ul></ul></div>
+	<span class="prev"></span>
+	<span class="next"></span>
+</div><!--fullSlide end-->
+  
+  
+<script type="text/javascript">
+$(".fullSlide").hover(function(){
+    $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function(){
+    $(this).find(".prev,.next").fadeOut()
+});
+$(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+
+
+<div style="text-align:center;padding-top:300px; font:normal 14px/24px 'MicroSoft YaHei';clear:both;"><br><br>
+<img src="img/hhh01.png" alt=""   style="height:auto;width:1100px;" />
+</div>
+<div style="text-align:center; font:normal 14px/24px 'MicroSoft YaHei';clear:both;">
+<img src="img/hhh02.png" alt=""  style="height:auto; width:1100px;"/><br><br>
+<p>欢迎访问本考试系统</p>
+</div>
+</body>
+</html>

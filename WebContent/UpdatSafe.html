@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>修改个人信息</title>
+<link rel=stylesheet type=text/css href="./lib/movie.css">
+
+</head>
+<body bgcolor="#F4FFFE">
+<div align="center"><br>
+<h3>修改个人账户</h3>
+<form name="loginForm" method="post" action=" " onsubmit="return CheckForm()" target="_self">
+<input type="hidden" name="userName" value="${user.userName}"/>
+<table width="40%" border="0">
+
+
+<tr>
+<td width="40%" align="right" height="25">请输入旧密码：</td>
+<td width="40%" align="left" height="25"><input name="oldPassword" type="password" size="20"><font color="#ff0000"></font></td>
+</tr>
+<tr>
+<td width="50%" align="right" height="25">请输入新密码：</td>
+<td width="50%" align="left" height="25"><input name="userPassword1" type="password" size="20" ><font color="#ff0000"></font></td>
+</tr>
+<tr>
+<td width="50%" align="right" height="25">请确认新密码：</td>
+<td width="50%" align="left" height="25"><input name="userPassword2" type="password" size="20" ></td>
+</tr>
+
+<tr>
+
+<td width="100" height="50" align="right" > &nbsp;<input type="reset" name="res" value="重填"  ></td>
+
+<td width="20" height="10" align="left"><input type="submit" name="sub" value="修改" ></td>
+
+
+</tr>
+</table>
+
+</form>
+</div>
+</body>
+</html>
